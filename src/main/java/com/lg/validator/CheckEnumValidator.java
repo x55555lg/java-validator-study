@@ -47,9 +47,9 @@ public class CheckEnumValidator implements ConstraintValidator<CheckEnum, Object
         if (value == null) {
             return true;
         }
-        Enum anEnum = this.parseEnum(value);
+        Enum target = this.parseEnum(value);
         // 当解析出的枚举对象存在并且也在白名单重时，返回true
-        return anEnum != null && this.whitelistEnumValues.contains(anEnum);
+        return target != null && this.whitelistEnumValues.contains(target);
     }
 
     /**

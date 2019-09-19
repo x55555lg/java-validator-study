@@ -39,8 +39,6 @@ public class MobileValidator implements ConstraintValidator<Mobile, String> {
 
     @Override
     public boolean isValid(String mobile, ConstraintValidatorContext context) {
-        System.out.println(toString());
-        // 必须先这么写...
         if (mobile == null) {
             return true;
         }
