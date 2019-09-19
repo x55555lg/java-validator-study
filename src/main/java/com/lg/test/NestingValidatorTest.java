@@ -32,7 +32,7 @@ public class NestingValidatorTest {
         for (ConstraintViolation<Account> violation : violations1) {
             System.err.println(violation);
         }
-        System.out.println("=====================================================");
+        System.out.println("====================================================");
         Set<ConstraintViolation<Account>> violations2 = validator.validate(new Account(
                 null, null, new Address(null)));
         for (ConstraintViolation<Account> violation : violations2) {
